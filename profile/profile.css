@@ -53,3 +53,13 @@ background: linear-gradient(90deg, rgba(238,117,38,1) 0%, rgba(184,68,145,1) 100
     padding: 10px 20px; /* Adjust padding as needed */
     cursor: pointer; /* Pointer cursor on hover */
 }
+
+    .btn-outline-primary {
+        color: black; /* Text color */
+        border-color: rgb(238,117,38);
+       border-color:  linear-gradient(90deg, rgba(238,117,38,1) 0%, rgba(184,68,145,1) 100%);;
+    }
+    .btn-outline-primary:hover {
+        background-color: coral; /* Background color on hover */
+    }
+
