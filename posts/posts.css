@@ -1,1 +1,30 @@
-/* Posts Page CSS */
+/* Custom css for the posts page */
+
+.post {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.post-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.post-body {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.post-author {
+    margin-top: 10px;
+    font-style: italic;
+    color: #888;
+}
+
+.post-date {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #888;
+}

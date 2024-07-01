@@ -1,0 +1,18 @@
+/* Custom CSS for the profile page */
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-greeting {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}

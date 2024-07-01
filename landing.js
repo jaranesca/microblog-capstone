@@ -1,24 +1,60 @@
-/* Landing Page JavaScript */
+const apiBaseURL = "http://microbloglite.us-east-2.elasticbeanstalk.com";
 
-"use strict";
+document.addEventListener('DOMContentLoaded', function() {
+    if (isLoggedIn()) {
+        window.location.assign("./posts/posts.html");  
+    }     
+});
 
-const loginForm = document.querySelector("#login");
-
-loginForm.onsubmit = function (event) {
-    // Prevent the form from refreshing the page,
-    // as it will do by default when the Submit event is triggered:
+async function login(event) {
     event.preventDefault();
 
-    // We can use loginForm.username (for example) to access
-    // the input element in the form which has the ID of "username".
-    const loginData = {
-        username: loginForm.username.value,
-        password: loginForm.password.value,
+    const form = document.getElementById('loginForm');
+    const formData = new FormData(form);
+
+    // Convert FormData to JSON
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+
+    console.log('Data to be sent:', data);
+
+    const options = { 
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    };
+
+    try {
+        const response = await fetch(apiBaseURL + "/auth/login", options);
+        const responseData = await response.json();
+
+        if (!response.ok) {
+            console.error('Login failed:', responseData);
+            alert(responseData.message || 'Login failed, please try again.');
+            return;
+        }
+
+        console.log('Login success:', responseData);
+        window.localStorage.setItem("login-data", JSON.stringify(responseData));
+        
+        window.location.assign("./profile/profile.html");  
+
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        alert('An error occurred during login, please try again.');
     }
+}
 
-    // Disables the button after the form has been submitted already:
-    loginForm.loginButton.disabled = true;
+function getLoginData() {
+    const loginJSON = window.localStorage.getItem("login-data");
+    return loginJSON ? JSON.parse(loginJSON) : {};
+}
 
-    // Time to actually process the login using the function from auth.js!
-    login(loginData);
-};
+function isLoggedIn () {
+    const loginData = getLoginData();
+    return Boolean(loginData.token);
+}
