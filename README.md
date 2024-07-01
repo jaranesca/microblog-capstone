@@ -1,4 +1,4 @@
-Welcome to my microblogging website project! This project is aimed at creating a platform where users can share insights about their interests. Below are the details and instructions for navigating through the site:
+Welcome to my microblogging website project called "TEA" This project is aimed at creating a platform where users can share insights about their interests. Below are the details and instructions for navigating through the site:
 
 Features:
 
