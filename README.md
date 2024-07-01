@@ -5,15 +5,33 @@ Features:
 Pages
 
 -Landing/Login Page: Introduces the website and features a login form. Users are redirected to the Posts page upon successful login.
+
 -Registration Page: Allows new users to sign up. After registration, users are directed to the Login page.
+
 -Posts Page: Displays posts from all users once logged in. Includes a logout button and a form for creating new posts.
+
 -Profile Page: Shows user profile information and includes options to log out and edit user details.
 
 Project Structure
+
 index.html: Landing/Login page
+
 auth.js: JavaScript file for authentication functions
+
 landing.js: JavaScript specific to the landing page
+
 posts/:
+
 posts.html: Posts page
+
 posts.js: JavaScript specific to the Posts page
+
+post.css
+
+profile/:
+
 profile.html: Profile page
+
+profile.js
+
+profile.css
