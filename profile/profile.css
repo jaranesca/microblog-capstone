@@ -1,4 +1,9 @@
 /* Custom CSS for the profile page */
+.navbar-brand {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 .profile-container {
     max-width: 600px;

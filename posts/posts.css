@@ -1,5 +1,11 @@
 /* Custom css for the posts page */
 
+.navbar-brand {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 .post {
     margin-bottom: 20px;
     padding: 15px;
