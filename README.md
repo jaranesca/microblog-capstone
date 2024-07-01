@@ -11,11 +11,9 @@ Pages
 
 Project Structure
 index.html: Landing/Login page
-global.css: Global CSS styles
-landing.css: CSS specific to the landing page
 auth.js: JavaScript file for authentication functions
 landing.js: JavaScript specific to the landing page
 posts/:
 posts.html: Posts page
-posts.css: CSS specific to the Posts page
 posts.js: JavaScript specific to the Posts page
+profile.html: Profile page
