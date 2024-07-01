@@ -16,3 +16,35 @@
     display: flex;
     justify-content: space-between;
 }
+   /* Custom Navbar Color */
+   .navbar-dark {
+    background-color: rgb(238,117,38);
+background: linear-gradient(90deg, rgba(238,117,38,1) 0%, rgba(184,68,145,1) 100%);; /* Dark background color */
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* White text color */
+}
+
+/* Custom Button Colors */
+.btn-custom {
+    background-color: pink; /* Green background color */
+    border-color: rgb(238,117,38);
+background: linear-gradient(90deg, rgba(238,117,38,1) 0%, rgba(184,68,145,1) 100%);; /* Green border color */
+    color: #ffffff; /* White text color */
+}
+
+.btn-custom:hover {
+    background-color: orangered; /* Darker green on hover */
+    border-color: orangered; /* Darker border on hover */
+    color: #ffffff; /* White text color */
+}
+.btn-primary {
+    background-color:rgb(238,117,38);
+    background: linear-gradient(90deg, rgba(238,117,38,1) 0%, rgba(184,68,145,1) 100%);;
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer; /* Pointer cursor on hover */
+}
