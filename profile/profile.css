@@ -61,5 +61,6 @@ background: linear-gradient(90deg, rgba(238,117,38,1) 0%, rgba(184,68,145,1) 100
     }
     .btn-outline-primary:hover {
         background-color: coral; /* Background color on hover */
+        border-color: coral;
     }
 
