@@ -31,9 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
-
 // function to log out
 function logout () {
     const loginData = getLoginData();
